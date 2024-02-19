@@ -1,0 +1,2 @@
+srcomapi==0.3.3
+texttable==1.7.0
