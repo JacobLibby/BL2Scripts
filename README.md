@@ -2,10 +2,6 @@
 Scripts for Borderlands 2
 
 
-# Current Status:
-
-Currently, I am in the process of implementing idea 1, which is a cli tool to print out speedrunning records for different categories depending on user input. Right now, output is very disorganized and is mainly used for debugging, which will be updated momentarily to provide a more usable interface.
-
 Packages used are included in _requirements.txt_.
 
 
@@ -17,6 +13,12 @@ Packages used are included in _requirements.txt_.
 4. Create gibbed save file for geared speedruns
 5. Computer vision deep learning to detect item parts from screen capture
 
+# Current Status:
+1. Speedrunning Script - completed functioning prototype. Takes user input of what categories to print out the top run data for
+2. Currently creating a web scraper in python to grab data
+3. Currently creating a web scraper in python to grab data
+4. Yet to be implemented
+5. Yet to be implemented
 
 # Running the Scripts:
 
