@@ -15,7 +15,7 @@ Packages used are included in _requirements.txt_.
 
 # Current Status:
 1. Speedrunning Script - completed functioning prototype. Takes user input of what categories to print out the top run data for
-2. Currently creating a web scraper in python to grab data
+2. Created first draft of unique weapons db from webscraping lootlemon website with selenium and beautiful soup (since website loads data with Javascript)
 3. Currently creating a web scraper in python to grab data
 4. Yet to be implemented
 5. Yet to be implemented
