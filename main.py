@@ -11,13 +11,13 @@ def main():
     tableCategories = Texttable()
     tableCategories.set_cols_dtype(['i','t'])
     categories = []
-    tableCategories.add_rows([["Index","Current Categories"]])
+    tableCategories.add_rows([["Index","Speedrunning Categories"]])
     for eachCategory in range(len(game.categories)):
         tableCategories.add_row([eachCategory,str(game.categories[eachCategory])[11:-2]])
     # t.add_rows([["Current Categories"], (print(', ["' + category + ']"') for category in categories)])
 
     # t.add_rows(eachCategory))
-    print("Please select a speedrunning category with input 0-" + str(len(game.categories)) + " and hit 'enter'")
+    print("Please select a speedrunning category with input 0-" + str(len(game.categories)-1) + " and hit 'enter'")
     print(tableCategories.draw())
     # print(game)
     # print(game.categories)
@@ -28,10 +28,10 @@ def main():
         try:
             chosenCat = int(input(""))
         except ValueError:
-            print("Invalid input, please select a speedrunning category with input 0-" + str(len(game.categories)) + " and hit 'enter'")
+            print("Invalid input, please select a speedrunning category with input 0-" + str(len(game.categories)-1) + " and hit 'enter'")
             continue
         if chosenCat < 0 or chosenCat >= len(game.categories):
-            print("Invalid input, please select a speedrunning category with input 0-" + str(len(game.categories)) + " and hit 'enter'")
+            print("Invalid input, please select a speedrunning category with input 0-" + str(len(game.categories)-1) + " and hit 'enter'")
             continue
         else:
             break
